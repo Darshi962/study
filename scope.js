@@ -1,5 +1,5 @@
-//Lexical means:Scope is decided by where the function is written (its physical location in code)
-//Dynamic scope means:Scope is decided by who calls the function.
+// // Lexical means:Scope is decided by where the function is written (its physical location in code)
+// // Dynamic scope means:Scope is decided by who calls the function.
 
 // let name = "Global"; //creating a global variable
 
@@ -15,10 +15,10 @@
 
 // outer(); //We start the execution.
 
-//the output is outer 
+// // the output is outer 
 
-//Because inner() is written inside outer().So it looks at its surrounding (lexical environment).Even if you call it somewhere else, it still remembers where it was created.
-//---------------------------------------------------------------------------Lexical scope ------------------------------------------------------------------------------//
+// // Because inner() is written inside outer().So it looks at its surrounding (lexical environment).Even if you call it somewhere else, it still remembers where it was created.
+// // ---------------------------------------------------------------------------Lexical scope ------------------------------------------------------------------------------//
 
 
 // let name = "Global";
@@ -34,8 +34,8 @@
 
 // outer();
 
-//the output is global 
+// // the output is global 
 
-//it prints global because it looks where it is created not where it is called
+// // it prints global because it looks where it is created not where it is called
 
-//---------------------------------------------------------------------------dynamic scope ------------------------------------------------------------------------------//
+// // ---------------------------------------------------------------------------dynamic scope ------------------------------------------------------------------------------//

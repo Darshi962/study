@@ -21,13 +21,13 @@
 
 // // it gives output as 
 
-// Memory Usage: 11.22 MB
-// Memory Usage: 11.58 MB
-// Memory Usage: 11.60 MB
-// Memory Usage: 11.57 MB
-// Memory Usage: 11.58 MB
-// Memory Usage: 11.59 MB
-// Memory Usage: 11.59 MB... infinity 
+// // Memory Usage: 11.22 MB
+// // Memory Usage: 11.58 MB
+// // Memory Usage: 11.60 MB
+// // Memory Usage: 11.57 MB
+// // Memory Usage: 11.58 MB
+// // Memory Usage: 11.59 MB
+// // Memory Usage: 11.59 MB... infinity 
 
 // function createSafeFunction() {
 //   return function () {
@@ -44,17 +44,17 @@
 //   console.log(`Memory Usage: ${used.toFixed(2)} MB`);
 // }, 1000);
 
-//its giving output as 
+// // its giving output as 
 
-// Created temporarily
-// Memory Usage: 11.80 MB
-// Created temporarily
-// Memory Usage: 11.59 MB
-// Created temporarily
-// Memory Usage: 11.57 MB
-// Created temporarily
-// Memory Usage: 11.58 MB
-// Created temporarily
-// Memory Usage: 11.59 MB
-// Created temporarily
-// Memory Usage: 11.62 MB
+// // Created temporarily
+// // Memory Usage: 11.80 MB
+// // Created temporarily
+// // Memory Usage: 11.59 MB
+// // Created temporarily
+// // Memory Usage: 11.57 MB
+// // Created temporarily
+// // Memory Usage: 11.58 MB
+// // Created temporarily
+// // Memory Usage: 11.59 MB
+// // Created temporarily
+// // Memory Usage: 11.62 MB
