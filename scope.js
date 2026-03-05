@@ -1,41 +1,42 @@
-// // Lexical means:Scope is decided by where the function is written (its physical location in code)
-// // Dynamic scope means:Scope is decided by who calls the function.
+// Lexical means:Scope is decided by where the function is written (its physical location in code)
+// Dynamic scope means:Scope is decided by who calls the function.
+// Scope  is the set of variables that are accessible in a certain part of the code. It determines where you can access certain variables and functions.
 
-// let name = "Global"; //creating a global variable
+let name = "Global"; //creating a global variable
 
-// function outer() { //We declare a function called outer.
-//   let name = "Outer";  //Inside outer, we create a new variable also called name.
+function outer() { //We declare a function called outer.
+  let name = "Outer";  //Inside outer, we create a new variable also called name.
 
-//   function inner() { //We define another function inside outer.
-//     console.log(name); //When inner runs, it searches for name.
-//   }
+  function inner() { //We define another function inside outer.
+    console.log(name); //When inner runs, it searches for name.
+  }
 
-//   inner(); //We call inner from inside outer
-// }
+  inner(); //We call inner from inside outer
+}
 
-// outer(); //We start the execution.
+outer(); //We start the execution.
 
-// // the output is outer 
+// the output is outer 
 
-// // Because inner() is written inside outer().So it looks at its surrounding (lexical environment).Even if you call it somewhere else, it still remembers where it was created.
-// // ---------------------------------------------------------------------------Lexical scope ------------------------------------------------------------------------------//
+// Because inner() is written inside outer().So it looks at its surrounding (lexical environment).Even if you call it somewhere else, it still remembers where it was created.
+// ---------------------------------------------------------------------------Lexical scope ------------------------------------------------------------------------------//
 
 
-// let name = "Global";
+let name = "Global";
 
-// function show() { //Function show is created in global scope.It is NOT written inside outer.
-//   console.log(name); //When show() runs, it looks for name. It searches:Outside → Global scope 
-// }
+function show() { //Function show is created in global scope.It is NOT written inside outer.
+  console.log(name); //When show() runs, it looks for name. It searches:Outside → Global scope 
+}
 
-// function outer() {
-//   let name = "Outer";
-//   show();
-// }
+function outer() {
+  let name = "Outer";
+  show();
+}
 
-// outer();
+outer();
 
-// // the output is global 
+// the output is global 
 
-// // it prints global because it looks where it is created not where it is called
+// it prints global because it looks where it is created not where it is called
 
-// // ---------------------------------------------------------------------------dynamic scope ------------------------------------------------------------------------------//
+// ---------------------------------------------------------------------------dynamic scope ------------------------------------------------------------------------------//
